@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="durga.jpg" alt="Your Photo">
+            <p>Hi, I'm [Durgarao Kumili], a web developer with a passion for creating stunning and efficient websites.</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>BSC at SDS Autonomous college - Jun 2019 - Mar 2022 (GPA: 7.56)<br>
+            Masters of Computer Applications (MCA) at Sanketika Vidyaparsidh Engineering college - Oct 2022 – Jul<br>
+            MPC at Srinivasa Junior College - Jun 2027 - Mar 2019 (GPA: 8.54)</p>
+            <h3>Work Experience</h3>
+            <p>Vinukoti Business Solutions - Nov 2023 – Jan 2024<br>
+            - Collaborated with a team of developers to design, develop, and maintain responsive websites for diverse clients.<br>
+            - Utilized HTML, CSS, JavaScript, and PHP to create user-friendly web pages with an emphasis on modern design principles and accessibility.<br>
+            - Integrated front-end elements with server-side logic to ensure seamless functionality and optimal user experience.<br>
+            - Worked with databases (e.g., MySQL) to fetch, display, and update data as required for various web applications.<br>
+            - Actively participated in team projects, fostering a collaborative work environment and contributing to successful project outcomes.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>Frameworks: Bootstrap, Tailwind CSS</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <h3>CRUD Operations</h3>
+                <p>CRUD stands for Create, Read, Update, and Delete. These operations are fundamental in managing data in web applications used the languages HTML, CSS, SQL, PHP, JavaScript, Bootstrap.</p>
+                <a href="https://github.com/7durga/Crud-operations">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Innovative Website with Integrated Chatbot Support</h3>
+                <p>Developed an innovative website featuring integrated chatbot support, enhancing user engagement and providing real-time assistance. The application seamlessly blends traditional web functionality with advanced AI-driven interaction, resulting in a streamlined and interactive user experience.</p>
+                <a href="https://github.com/7durga/Innovative-Website-with-Integrated-Chatbot-Support-">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <form id="contact-form" action="submit-form-url" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <div id="name-error" class="error"></div>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <div id="email-error" class="error"></div>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <div id="message-error" class="error"></div>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
